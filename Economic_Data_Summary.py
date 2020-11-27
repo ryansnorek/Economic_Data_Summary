@@ -67,8 +67,8 @@ def dataFromSource(source):
 
 # Print the date/time stamps and option to rerun program
 def printDates(data):
-    for i in data:
-        print(i)
+    for d in data:
+        print(d)
 
     print("")
     inp = input("Run program again? y/n ")
