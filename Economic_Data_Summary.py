@@ -50,9 +50,9 @@ def htmlSource():
 def getData(source):
     html = requests.get(source).text
     soup = bs(html,'html.parser')
-    sourceStats = []
     stats = soup.find_all('tbody')
-
+    
+    sourceStats = []
     for stat in stats:
         statElement = stat.find_all('td')
         for elem in statElement:
