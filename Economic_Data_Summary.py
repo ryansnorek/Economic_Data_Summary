@@ -46,7 +46,7 @@ def htmlSource():
         link = m2supply
     return link
 
-# Pull the data from the selected link and print summary
+# Get data from the selected link
 def getData(source):
     html = requests.get(source).text
     soup = bs(html,'html.parser')
@@ -59,8 +59,8 @@ def getData(source):
             sourceStats.append(elem.text)
     return sourceStats
 
-# Print the date/time stamps and option to rerun program
-def printDates(data):
+# Print the summary, dates, and option to rerun program
+def printData(data):
     summary = data[0]    
     dates = data[11:15]
 
@@ -70,10 +70,10 @@ def printDates(data):
         
     inp = input("\nRun program again? y/n ")
     if inp == 'y':
-        printDates( getData ( htmlSource() ))   
+        printData( getData ( htmlSource() ))   
 
 # Run program
-printDates( getData ( htmlSource() ))   
+printData( getData ( htmlSource() ))   
 
 
 
