@@ -14,8 +14,7 @@ m2supply = 'https://ycharts.com/indicators/us_m2_money_stock'
 
 # Ask user for selection and return the source link
 def htmlSource():
-    print("")
-    print("1. US Investor Sentiment %")
+    print("\n1. US Investor Sentiment %")
     print("2. Cash Allocation")
     print("3. US Inflation")
     print("4. Japan Inflation")
@@ -24,8 +23,8 @@ def htmlSource():
     print("7. Real Dollar Index")
     print("8. Velocity of M2 Money")
     print("9. M2 Money Supply")
-    print("")
-    selection = input("Enter a number from the list: ")
+    
+    selection = input("\nEnter a number from the list: ")
     
     if selection == '1':
         link = investorSentiment
