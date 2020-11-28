@@ -50,24 +50,26 @@ def htmlSource():
 def getData(source):
     html = requests.get(source).text
     soup = bs(html,'html.parser')
-    statsArray = []
+    sourceStats = []
     stats = soup.find_all('tbody')
 
     for stat in stats:
         statElement = stat.find_all('td')
 
         for elem in statElement:
-            statsArray.append(elem.text)
-
-    summary = statsArray[0]    
-    dates = statsArray[11:15] 
-    print(summary) 
-    return dates
+            sourceStats.append(elem.text)
+ 
+    return sourceStats
 
 # Print the date/time stamps and option to rerun program
 def printDates(data):
-    for d in data:
-        print(d)
+    summary = data[0]    
+    dates = data[11:15]
+
+    print(summary)
+
+    for i in dates:
+        print(i)
 
     inp = input("\nRun program again? y/n ")
     if inp == 'y':
