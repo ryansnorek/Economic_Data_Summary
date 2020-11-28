@@ -55,10 +55,8 @@ def getData(source):
 
     for stat in stats:
         statElement = stat.find_all('td')
-
         for elem in statElement:
             sourceStats.append(elem.text)
- 
     return sourceStats
 
 # Print the date/time stamps and option to rerun program
@@ -67,10 +65,9 @@ def printDates(data):
     dates = data[11:15]
 
     print(summary)
-
     for i in dates:
         print(i)
-
+        
     inp = input("\nRun program again? y/n ")
     if inp == 'y':
         printDates( getData ( htmlSource() ))   
