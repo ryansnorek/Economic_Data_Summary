@@ -47,7 +47,7 @@ def htmlSource():
     return link
 
 # Pull the data from the selected link and print summary
-def dataFromSource(source):
+def getData(source):
     html = requests.get(source).text
     soup = bs(html,'html.parser')
     statsArray = []
@@ -69,13 +69,12 @@ def printDates(data):
     for d in data:
         print(d)
 
-    print("")
-    inp = input("Run program again? y/n ")
+    inp = input("\nRun program again? y/n ")
     if inp == 'y':
-        printDates( dataFromSource ( htmlSource() ))   
+        printDates( getData ( htmlSource() ))   
 
 # Run program
-printDates( dataFromSource ( htmlSource() ))   
+printDates( getData ( htmlSource() ))   
 
 
 
