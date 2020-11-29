@@ -344,12 +344,12 @@ def getData(html):
     soup = bs(source,'html.parser')
     stats = soup.find_all('tbody')
 
-    sourceStats = []
+    STATS = []
     for stat in stats:
         statElement = stat.find_all('td')
         for elem in statElement:
-            sourceStats.append(elem.text) 
-    return sourceStats
+            STATS.append(elem.text) 
+    return STATS
 
 def printData(data):
     summary = data[0]    
