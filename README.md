@@ -2,74 +2,16 @@
 
 This program scrapes economic data from the web and prints a summary. 
 
-1. Inflation
-   a. US Consumer Prices
-   b. US Inflation Rate
-   c. US M2 Money Supply
-   d. US M2 Money Velocity
-   e. Japan Inflation
-   f. UK Inflation
-   g. China Inflation
-   h. China M2 Money Supply
+1. Inflation: US Consumer Prices, US Inflation Rate, US M2 Money Supply, US M2 Money Velocity, Japan Inflation, UK Inflation, China Inflation, China M2 Money Supply
    
-2. Sentiment
-  a. US Investor Sentiment
-  b. US Consumer Sentiment
-  c. Cash Allocation
-  d. Bond Allocation
-  e. Stock Allocation
-  f. EU Consumer Confidence
-  g. EU Economic Sentiment
-  h. Japan Consumer Confidence
-  i. UK Economic Sentiment
+2. Sentiment: US Investor Sentiment, US Consumer Sentiment, Cash Allocation, Bond Allocation, Stock Allocation, EU Consumer Confidence, EU Economic Sentiment, Japan Consumer Confidence, UK Economic Sentiment
  
-3. Monetary
-  a. Real Dollar Index
-  b. M1 Money Supply 
-  c. M1 Money Velocity
-  d. US Bank Loans: Commercial
-  e. US Bank Loans: Credit Card
-  f. US GDP
-  g. UK GDP
-  h. Sweden GDP
-  i. Netherlands GDP
-  j. EU GDP
-  k. China GDP
-  l. World GDP
-  m. US Public Debt
+3. Monetary: Real Dollar Index, M1 Money Supply, M1 Money Velocity, US Bank Loans: Commercial, US Bank Loans: Credit Card, US GDP, UK GDP, Sweden GDP, Netherlands GDP, EU GDP, China GDP, World GDP, US Public Debt
   
-4. Energy
-  a. US Energy Consumption
-  b. US Wind Production
-  c. US Solar Production
-  d. US Natural Gas Production
-  e. US Nuclear Electric Production
-  f. US Oil Production
-  g. US Oil Imports
-  h. Iran Oil Production
-  i. OPEC Oil Production
-  j. Saudi Arabia Oil Production
-  k. World Oil Production
+4. Energy: US Energy Consumption, US Wind Production, US Solar Production, US Natural Gas Production, US Nuclear Electric Production, US Oil Production, US Oil Imports, Iran Oil Production, OPEC Oil Production, Saudi Arabia Oil Production, World Oil Production
   
-5. Weekly Petroleum
-  a. US Petroleum Imports
-  b. US Petroleum Exports
-  c. US Oil Imports
-  d. US Oil Exports
-  e. US Crude Imports
-  f. US Crude Exports
-  g. US Crude Stocks
-  h. US Gasoline Imports
-  i. US Gasoline Stocks
+5. Weekly Petroleum: US Petroleum Imports, US Petroleum Exports, US Oil Imports, US Oil Exports, US Crude Imports, US Crude Exports, US Crude Stocks, US Gasoline Imports, US Gasoline Stocks
   
-6. Natural Gas
-  a. LNG Imports
-  b. LNG Exports
-  c. Natural Gas Imports
-  d. Natural Gas Exports
-  e. Natural Gas Production
-  f. Natural Gas Consumption
-  g. Natural Gas Storage
-  h. Natural Gas Storage Volume
+6. Natural Gas: LNG Imports, LNG Exports, Natural Gas Imports, Natural Gas Exports, Natural Gas Production, Natural Gas Consumption, Natural Gas Storage, Natural Gas Storage Volume
 
 source: https://ycharts.com/indicators
