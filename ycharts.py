@@ -53,6 +53,8 @@ crudeExportsWk = 'https://ycharts.com/indicators/us_crude_oil_exports_wie'
 crudeStocksWk = 'https://ycharts.com/indicators/us_stocks_of_crude_oil'
 gasImportsWk = 'https://ycharts.com/indicators/us_gasoline_imports'
 gasStocksWk = 'https://ycharts.com/indicators/us_ending_stocks_of_gasoline'
+oilRigs = 'https://ycharts.com/indicators/us_oil_rotary_rigs'
+worldRigs = 'https://ycharts.com/indicators/total_world_rotary_rigs'
 # Natural Gas -----------------------------------------------------------
 lngImports = 'https://ycharts.com/indicators/us_liquefied_natural_gas_imports'
 lngExports = 'https://ycharts.com/indicators/us_liquefied_natural_gas_exports'
@@ -62,4 +64,4 @@ ngProduction = 'https://ycharts.com/indicators/us_natural_gas_production_dry_mer
 ngConsumption = 'https://ycharts.com/indicators/us_natural_gas_consumption'
 ngStorage = 'https://ycharts.com/indicators/us_working_natural_gas_underground_storage'
 ngVolume = 'https://ycharts.com/indicators/us_natural_gas_underground_storage_volume'
-
+ngRigs = 'https://ycharts.com/indicators/us_gas_rotary_rigs'
