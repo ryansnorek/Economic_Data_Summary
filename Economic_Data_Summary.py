@@ -62,10 +62,11 @@ def sentiment():
     print('7. EU Economic Sentiment')
     print('8. Japan Consumer Confidence')
     print('9. UK Economic Sentiment')
+    print('10. US Unemployment Rate')
 
     selection = input('\nEnter number from the list: ')
     selection = int(selection)
-    while selection < 0 or selection > 9:
+    while selection < 0 or selection > 10:
         selection = input('\nEnter number from the list: ')
         selection = int(selection)
 
@@ -78,7 +79,8 @@ def sentiment():
             printAll( getData(euCCI))
             printAll( getData(euSentiment))
             printAll( getData(japanCCI))
-            printData( getData(ukSentiment))
+            printAll( getData(ukSentiment))
+            printData( getData(usUnemployment))
     if selection == 1:
         link = investorSentiment
     elif selection == 2:
@@ -97,6 +99,8 @@ def sentiment():
         link = japanCCI
     elif selection == 9:
         link = ukSentiment
+    elif selection == 10:
+        link = usUnemployment
     return link
 
 def monetary():
