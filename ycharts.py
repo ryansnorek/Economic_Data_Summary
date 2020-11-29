@@ -17,6 +17,7 @@ euCCI = 'https://ycharts.com/indicators/europe_consumer_confidence_indicator'
 euSentiment = 'https://ycharts.com/indicators/europe_economic_sentiment_indicator'
 japanCCI = 'https://ycharts.com/indicators/japan_consumer_confidence_index_sa'
 ukSentiment = 'https://ycharts.com/indicators/united_kingdom_economic_sentiment_indicator'
+usUnemployment = 'https://ycharts.com/indicators/us_unemployment_rate'
 # Monetary -----------------------------------------------------------
 realDollarIndex = 'https://ycharts.com/indicators/real_trade_weighted_us_dollar_index_broad_goods_and_services'
 m1supply = 'https://ycharts.com/indicators/us_m1_money_stock'
