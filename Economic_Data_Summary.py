@@ -195,27 +195,27 @@ def energy():
             printAll( getData(opecOilProduction))  
             printAll( getData(saOilProduction))
             printData( getData(worldOilProduction))
-    if selection == 1:
+    elif selection == 1:
         link = usEnergyConsumption
-    if selection == 2:
+    elif selection == 2:
         link = usWindProduction
-    if selection == 3:
+    elif selection == 3:
         link = usSolarProduction
-    if selection == 4:
+    elif selection == 4:
         link = usNGProduction
-    if selection == 5:
+    elif selection == 5:
         link = usNuclearProduction
-    if selection == 6:
+    elif selection == 6:
         link = usOilProduction
-    if selection == 7:
+    elif selection == 7:
         link = usOilImports
-    if selection == 8:
+    elif selection == 8:
         link = iranOilProduction
-    if selection == 9:
+    elif selection == 9:
         link = opecOilProduction
-    if selection == 10:
+    elif selection == 10:
         link = saOilProduction
-    if selection == 11:
+    elif selection == 11:
         link = worldOilProduction
     return link
 
@@ -230,10 +230,12 @@ def petroleum():
     print('7. US Crude Stocks')
     print('8. US Gasoline Imports')
     print('9. US Gasoline Stocks')
+    print('10. US Oil Rigs')
+    print('11. World Oil Rigs')
 
     selection = input('\nEnter number from the list: ')
     selection = int(selection)
-    while selection < 0 or selection > 9:
+    while selection < 0 or selection > 11:
         selection = input('\nEnter number from the list: ')
         selection = int(selection)
 
@@ -246,25 +248,31 @@ def petroleum():
             printAll( getData(crudeExportsWk))
             printAll( getData(crudeStocksWk))
             printAll( getData(gasImportsWk))
-            printData( getData(gasStocksWk))  
-    if selection == 1:
+            printAll( getData(gasStocksWk)) 
+            printAll( getData(oilRigs))
+            printData( getData(worldRigs))
+    elif selection == 1:
         link = petroImportsWk
-    if selection == 2:
+    elif selection == 2:
         link = petroExportsWk
-    if selection == 3:
+    elif selection == 3:
         link = oilImportsWk
-    if selection == 4:
+    elif selection == 4:
         link = oilExportsWk
-    if selection == 5:
+    elif selection == 5:
         link = crudeImportsWk
-    if selection == 6:
+    elif selection == 6:
         link = crudeExportsWk
-    if selection == 7:
+    elif selection == 7:
         link = crudeStocksWk
-    if selection == 8:
+    elif selection == 8:
         link = gasImportsWk
-    if selection == 9:
+    elif selection == 9:
         link = gasStocksWk
+    elif selection == 10:
+        link = oilRigs
+    elif selection == 11:
+        link = worldRigs
     return link
 
 def naturalGas():
@@ -277,10 +285,11 @@ def naturalGas():
     print('6. Natural Gas Consumption')
     print('7. Natural Gas Storage')
     print('8. Natural Gas Storage Volume')
+    print('9. Natural Gas Rigs')
 
     selection = input('\nEnter number from the list: ')
     selection = int(selection)
-    while selection < 0 or selection > 8:
+    while selection < 0 or selection > 9:
         selection = input('\nEnter number from the list: ')
         selection = int(selection)
 
@@ -292,23 +301,26 @@ def naturalGas():
             printAll( getData(ngProduction))
             printAll( getData(ngConsumption))
             printAll( getData(ngStorage))
-            printData( getData(ngVolume))
-    if selection == 1:
+            printAll( getData(ngVolume))
+            printData( getData(ngRigs))
+    elif selection == 1:
         link = lngImports
-    if selection == 2:
+    elif selection == 2:
         link = lngExports
-    if selection == 3:
+    elif selection == 3:
         link = ngImports
-    if selection == 4:
+    elif selection == 4:
         link = ngExports
-    if selection == 5:
+    elif selection == 5:
         link = ngProduction
-    if selection == 6:
+    elif selection == 6:
         link = ngConsumption
-    if selection == 7:
+    elif selection == 7:
         link = ngStorage
-    if selection == 8:
+    elif selection == 8:
         link = ngVolume
+    elif selection == 9:
+        link = ngRigs
     return link
 
 def getHTML():
