@@ -18,11 +18,9 @@ def inflation():
     print('7. China Inflation')
     print('8. China M2 Money Supply')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 8:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
         printAll( getData(usCPI))
@@ -64,11 +62,9 @@ def sentiment():
     print('9. UK Economic Sentiment')
     print('10. US Unemployment Rate')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 10:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
             printAll( getData(investorSentiment))
@@ -119,11 +115,9 @@ def monetary():
     print('12. World GDP')
     print('13. US Public Debt')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 13:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
             printAll( getData(realDollarIndex))
@@ -181,11 +175,9 @@ def energy():
     print('10. Saudi Arabia Oil Production')
     print('11. World Oil Production')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 11:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
             printAll( getData(usEnergyConsumption))
@@ -237,11 +229,9 @@ def petroleum():
     print('10. US Oil Rigs')
     print('11. World Oil Rigs')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 11:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
             printAll( getData(petroImportsWk))
@@ -291,11 +281,9 @@ def naturalGas():
     print('8. Natural Gas Storage Volume')
     print('9. Natural Gas Rigs')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 0 or selection > 9:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
             printAll( getData(lngImports))
@@ -335,11 +323,9 @@ def getHTML():
     print('5. Weekly Petroleum')
     print('6. Natural Gas')
 
-    selection = input('\nEnter number from the list: ')
-    selection = int(selection)
+    selection = int(input('\nEnter number from the list: '))
     while selection < 1 or selection > 6:
-        selection = input('\nEnter number from the list: ')
-        selection = int(selection)
+        selection = int(input('\nEnter number from the list: '))
 
     if selection == 1:
         link = inflation()
