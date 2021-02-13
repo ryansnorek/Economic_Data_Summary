@@ -4,12 +4,7 @@ import requests
 # Contains all the URL links required to run the program
 from ycharts import *
 
-class Data:
-    def __init__(self, summary, dates):
-        self.summary = summary
-        self.dates = dates
-
-# Subset of selections that either prints everything or returns URL link
+# Subset of selections that can print everything or returns URL link
 def inflation():
     print('\n0. PRINT ALL')
     print('\n1. US Consumer Prices')
@@ -27,31 +22,25 @@ def inflation():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-        printAll(getData(usCPI))
-        printAll(getData(usInflation)) 
-        printAll(getData(usM2supply))
-        printAll(getData(usM2Velocity))
-        printAll(getData(japanInflation))
-        printAll(getData(ukInflation))
-        printAll(getData(chinaInflation))
-        printData(getData(chinaM2supply))
+      printAll(inflationURLs)
+      return exit()
 
     elif selection == 1:
-        link = usCPI
+        link = inflationURLs['usCPI']
     elif selection == 2:
-        link = usInflation
+        link = inflationURLs['us']
     elif selection == 3:
-        link = usM2supply
+        link = inflationURLs['usM2money']
     elif selection == 4:
-        link = usM2Velocity
+        link = inflationURLs['usM2Velocity']
     elif selection == 5:
-        link = japanInflation
+        link = inflationURLs['japan']
     elif selection == 6:
-        link = ukInflation
+        link = inflationURLs['uk']
     elif selection == 7:
-        link = chinaInflation
+        link = inflationURLs['china']
     elif selection == 8:
-        link = chinaM2supply
+        link = inflationURLs['chinaM2supply']
 
     return link
 def sentiment():
@@ -73,37 +62,29 @@ def sentiment():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-            printAll(getData(investorSentiment))
-            printAll(getData(usCCI)) 
-            printAll(getData(cashAllocation))
-            printAll(getData(bondAllocation))
-            printAll(getData(stockAllocation))
-            printAll(getData(euCCI))
-            printAll(getData(euSentiment))
-            printAll(getData(japanCCI))
-            printAll(getData(ukSentiment))
-            printData(getData(usUnemployment))
+        printAll(sentimentURLs)
+        return exit()
 
     if selection == 1:
-        link = investorSentiment
+        link = sentimentURLs['usInvestor']
     elif selection == 2:
-        link = usCCI
+        link = sentimentURLs['usConsumer']
     elif selection == 3:
-        link = cashAllocation
+        link = sentimentURLs['cash']
     elif selection == 4:
-        link = bondAllocation
+        link = sentimentURLs['bonds']
     elif selection == 5:
-        link = stockAllocation
+        link = sentimentURLs['stocks']
     elif selection == 6:
-        link = euCCI
+        link = sentimentURLs['euInvestor']
     elif selection == 7:
-        link = euSentiment
+        link = sentimentURLs['eu']
     elif selection == 8:
-        link = japanCCI
+        link = sentimentURLs['japanConsumer']
     elif selection == 9:
-        link = ukSentiment
+        link = sentimentURLs['uk']
     elif selection == 10:
-        link = usUnemployment
+        link = sentimentURLs['usUnemployment']
 
     return link
 def monetary():
@@ -128,46 +109,35 @@ def monetary():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-            printAll(getData(realDollarIndex))
-            printAll(getData(m1supply)) 
-            printAll(getData(m1Velocity))
-            printAll(getData(usLoansCommercial))
-            printAll(getData(usLoansCC))
-            printAll(getData(usGDP))
-            printAll(getData(ukGDP))
-            printAll(getData(swedenGDP))
-            printAll(getData(netherGDP))  
-            printAll(getData(euGDP))
-            printAll(getData(chinaGDP))
-            printAll(getData(worldGDP))
-            printData(getData(usDebt))
+        printAll(monetaryURLs)
+        return exit()
 
     if selection == 1:
-        link = realDollarIndex
+        link = monetaryURLs['realDollar']
     elif selection == 2:
-        link = m1supply
+        link = monetaryURLs['m1Supply']
     elif selection == 3:
-        link = m1Velocity
+        link = monetaryURLs['m1Velocity']
     elif selection == 4:
-        link = usLoansCommercial
+        link = monetaryURLs['usLoansCommercial']
     elif selection == 5:
-        link = usLoansCC
+        link = monetaryURLs['usLoansCC']
     elif selection == 6:
-        link = usGDP
+        link = monetaryURLs['usGDP']
     elif selection == 7:
-        link = ukGDP
+        link = monetaryURLs['ukGDP']
     elif selection == 8:
-        link = swedenGDP
+        link = monetaryURLs['swedenGDP']
     elif selection == 9:
-        link = netherGDP
+        link = monetaryURLs['netherGDP']
     elif selection == 10:
-        link = euGDP
+        link = monetaryURLs['euGDP']
     elif selection == 11:
-        link = chinaGDP
+        link = monetaryURLs['chinaGDP']
     elif selection == 12:
-        link = worldGDP
+        link = monetaryURLs['worldGDP']
     elif selection == 13:
-        link = usDebt
+        link = monetaryURLs['usDebt']
 
     return link
 def energy():
@@ -190,40 +160,31 @@ def energy():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-            printAll(getData(usEnergyConsumption))
-            printAll(getData(usWindProduction)) 
-            printAll(getData(usSolarProduction))
-            printAll(getData(usNGProduction))
-            printAll(getData(usNuclearProduction))
-            printAll(getData(usOilProduction))
-            printAll(getData(usOilImports))
-            printAll(getData(iranOilProduction))
-            printAll(getData(opecOilProduction))  
-            printAll(getData(saOilProduction))
-            printData(getData(worldOilProduction))
+        printAll(energyURLs)
+        return exit()
 
     elif selection == 1:
-        link = usEnergyConsumption
+        link = monetaryURLs['usEnergyConsumption']
     elif selection == 2:
-        link = usWindProduction
+        link = monetaryURLs['usWindProduction']
     elif selection == 3:
-        link = usSolarProduction
+        link = monetaryURLs['usSolarProduction']
     elif selection == 4:
-        link = usNGProduction
+        link = monetaryURLs['usNGProduction']
     elif selection == 5:
-        link = usNuclearProduction
+        link = monetaryURLs['usNuclearProduction']
     elif selection == 6:
-        link = usOilProduction
+        link = monetaryURLs['usOilProduction']
     elif selection == 7:
-        link = usOilImports
+        link = monetaryURLs['usOilImports']
     elif selection == 8:
-        link = iranOilProduction
+        link = monetaryURLs['IranOilProduction']
     elif selection == 9:
-        link = opecOilProduction
+        link = monetaryURLs['opecOilProduction']
     elif selection == 10:
-        link = saOilProduction
+        link = monetaryURLs['saOilProduction']
     elif selection == 11:
-        link = worldOilProduction
+        link = monetaryURLs['worldOilProduction']
 
     return link
 def petroleum():
@@ -246,40 +207,31 @@ def petroleum():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-            printAll(getData(petroImportsWk))
-            printAll(getData(petroExportsWk)) 
-            printAll(getData(oilImportsWk))
-            printAll(getData(oilExportsWk))
-            printAll(getData(crudeImportsWk))
-            printAll(getData(crudeExportsWk))
-            printAll(getData(crudeStocksWk))
-            printAll(getData(gasImportsWk))
-            printAll(getData(gasStocksWk)) 
-            printAll(getData(oilRigs))
-            printData(getData(worldRigs))
+        printAll(petroleumURLs)
+        return exit()
 
     elif selection == 1:
-        link = petroImportsWk
+        link = petroleumURLs['petroImportsWk']
     elif selection == 2:
-        link = petroExportsWk
+        link = petroleumURLs['petroExportsWk']
     elif selection == 3:
-        link = oilImportsWk
+        link = petroleumURLs['oilImportsWk']
     elif selection == 4:
-        link = oilExportsWk
+        link = petroleumURLs['oilExportsWk']
     elif selection == 5:
-        link = crudeImportsWk
+        link = petroleumURLs['crudeImportsWk']
     elif selection == 6:
-        link = crudeExportsWk
+        link = petroleumURLs['crudeExportsWk']
     elif selection == 7:
-        link = crudeStocksWk
+        link = petroleumURLs['crudeStocksWk']
     elif selection == 8:
-        link = gasImportsWk
+        link = petroleumURLs['gasImportsWk']
     elif selection == 9:
-        link = gasStocksWk
+        link = petroleumURLs['gasStocksWk']
     elif selection == 10:
-        link = oilRigs
+        link = petroleumURLs['oilRigs']
     elif selection == 11:
-        link = worldRigs
+        link = petroleumURLs['worldRigs']
 
     return link
 def naturalGas():
@@ -300,34 +252,27 @@ def naturalGas():
         selection = int(input('\nEnter number from the list: '))
 
     if selection == 0:
-            printAll(getData(lngImports))
-            printAll(getData(lngExports)) 
-            printAll(getData(ngImports))
-            printAll(getData(ngExports))
-            printAll(getData(ngProduction))
-            printAll(getData(ngConsumption))
-            printAll(getData(ngStorage))
-            printAll(getData(ngVolume))
-            printData(getData(ngRigs))
+        printAll(naturalGasURLs)
+        return exit()
 
     elif selection == 1:
-        link = lngImports
+        link = naturalGasURLs['lngImports']
     elif selection == 2:
-        link = lngExports
+        link = naturalGasURLs['lngExports']
     elif selection == 3:
-        link = ngImports
+        link = naturalGasURLs['ngImports']
     elif selection == 4:
-        link = ngExports
+        link = naturalGasURLs['ngExports']
     elif selection == 5:
-        link = ngProduction
+        link = naturalGasURLs['ngProduction']
     elif selection == 6:
-        link = ngConsumption
+        link = naturalGasURLs['ngConsumption']
     elif selection == 7:
-        link = ngStorage
+        link = naturalGasURLs['ngStorage']
     elif selection == 8:
-        link = ngVolume
+        link = naturalGasURLs['ngVolume']
     elif selection == 9:
-        link = ngRigs
+        link = naturalGasURLs['ngRigs']
 
     return link
 
@@ -356,7 +301,7 @@ def getLink():
         link = petroleum()
     elif selection == 6:
         link = naturalGas()
-
+    
     return link
 
 # Parse HTML from URL link and return the data in an array
@@ -378,32 +323,15 @@ def getData(link):
 def printData(data):
     summary = data[0]    
     dates = data[11:17]
-    DATA = Data(summary, dates)
 
-    print(DATA.summary)
-    print(DATA.dates,'\n')
+    print('-------------------------------------')
+    print(summary)
+    print(dates)
+    print('-------------------------------------')
 
-    # Option to rerun or end the program
-    runAgain = input("\nWould you like to run program again? y/n ")
-    if runAgain == 'y':
-        printData(getData(getLink()))
-    else:
-        exit()
-
-# Reserved for the 'PRINT ALL' option, for printing in sequence
 def printAll(data):
-    summary = data[0]    
-    dates = data[11:17]
-    DATA = Data(summary, dates)
-
-    print(DATA.summary)
-    print(DATA.dates,'\n')
-
-
+    for link in data:
+        printData(getData(data[link]))
+        
 # Run program -> Print out the data from the selected URL link
 printData(getData(getLink()))
-
-
-
-
-
